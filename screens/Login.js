@@ -3,11 +3,16 @@ import styled from "styled-components/native";
 
 const Container = styled.View``;
 const Text = styled.Text``;
+const Btn = styled.TouchableOpacity``;
+const BtnTxt = styled.Text``;
 
-const Login = () => {
+const Login = ({ navigation: { navigate } }) => {
   return (
     <Container>
-      <Text>Login</Text>
+      <Text>Don't have an account? </Text>
+      <Btn onPress={() => navigate("Join")}>
+        <BtnTxt>Join</BtnTxt>
+      </Btn>
     </Container>
   );
 };
