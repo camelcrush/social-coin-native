@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "638414109194",
+    "project_id": "social-coin-d51e7",
+    "storage_bucket": "social-coin-d51e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:638414109194:android:18fa29a877c0891923fdf3",
+        "android_client_info": {
+          "package_name": "com.camelcrush.socialcoin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "638414109194-4gardsivaib6iolatani99vnplbe4p3s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.camelcrush.socialcoin",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "638414109194-s5gdc3eqolc6ge0bc22p0itcv53gqg18.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRTSEBFdWCdUkNjHbZSefWoIDmckDUk04"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "638414109194-s5gdc3eqolc6ge0bc22p0itcv53gqg18.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "638414109194-llkokom89l6u3hlnl77ogcjse04pfqkk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.camelcrush.socialcoin"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:638414109194:android:b36bc725bd8e9da123fdf3",
+        "android_client_info": {
+          "package_name": "com.socialcoin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "638414109194-s5gdc3eqolc6ge0bc22p0itcv53gqg18.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRTSEBFdWCdUkNjHbZSefWoIDmckDUk04"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "638414109194-s5gdc3eqolc6ge0bc22p0itcv53gqg18.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "638414109194-llkokom89l6u3hlnl77ogcjse04pfqkk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.camelcrush.socialcoin"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
