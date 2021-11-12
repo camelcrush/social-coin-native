@@ -4,6 +4,7 @@ import { useQuery } from "react-query";
 import styled from "styled-components/native";
 import { coins } from "../api";
 import { BLACK_COLOR } from "../colors";
+import Coin from "../components/Coin";
 
 const Container = styled.View`
   background-color: ${BLACK_COLOR};
@@ -15,19 +16,6 @@ const Loader = styled.View`
   align-items: center;
   justify-content: center;
   background-color: ${BLACK_COLOR};
-`;
-
-const Coin = styled.View`
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 5px;
-  align-items: center;
-`;
-
-const CoinName = styled.Text`
-  color: white;
-  font-weight: 600;
-  font-size: 16px;
 `;
 
 const Home = () => {
@@ -55,11 +43,7 @@ const Home = () => {
         columnWrapperStyle={{ justifyContent: "space-between" }}
         ItemSeparatorComponent={() => <View style={{ height: 10 }} />}
         keyExtractor={(item) => item.id}
-        renderItem={({ item }) => (
-          <Coin style={{ flex: 0.31 }}>
-            <CoinName>{item.symbol}</CoinName>
-          </Coin>
-        )}
+        renderItem={({ item }) => <Coin symbol={item.symbol} />}
       />
     </Container>
   );
