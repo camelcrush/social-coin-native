@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
+import { useQuery } from "react-query";
 import styled from "styled-components/native";
+import { history, info } from "../api";
 import { Icon } from "../components/Coin";
 
 const Container = styled.View``;
@@ -7,7 +9,7 @@ const Container = styled.View``;
 const Detail = ({
   navigation,
   route: {
-    params: { symbol },
+    params: { symbol, id },
   },
 }) => {
   useEffect(() => {
@@ -21,6 +23,15 @@ const Detail = ({
       ),
     });
   }, []);
+  const { isLoading: infoLoading, data: infoData } = useQuery(
+    ["conInfo", id],
+    info
+  );
+  const { isLoading: historyLoading, data: historyData } = useQuery(
+    ["coinHistory", id],
+    history
+  );
+  console.log(infoData);
   return null;
 };
 

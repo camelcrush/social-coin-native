@@ -24,7 +24,7 @@ export const Icon = styled.Image`
   margin-bottom: 10px;
 `;
 
-const Coin = ({ symbol, index }) => {
+const Coin = ({ symbol, index, id }) => {
   const navigation = useNavigation();
   const opacity = useRef(new Animated.Value(0)).current;
   useEffect(() => {
@@ -41,7 +41,7 @@ const Coin = ({ symbol, index }) => {
   return (
     <TouchableOpacity
       style={{ flex: 0.31 }}
-      onPress={() => navigation.navigate("Detail", { symbol })}
+      onPress={() => navigation.navigate("Detail", { symbol, id })}
     >
       <Wrapper style={{ opacity, transform: [{ scale }] }}>
         <Icon
